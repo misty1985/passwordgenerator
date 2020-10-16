@@ -16,9 +16,23 @@
         </header>
         <div class="card">
             <div class="card-header">
-                <h2>Generate a Password</h2>
+                <h2>Choose Password Character Requirements</h2>
             </div>
+            <form action="/action_page.php">
+                <input type="checkbox" id="upperCase" name="upperCase">
+                <label>Upper Case</label><br>
+                <input type="checkbox" id="upperCase" name="upperCase">
+                <label>Lower Case</label><br>
+                <input type="checkbox" id="numbers" name="numbers">
+                <label>Numbers</label><br>
+                <input type="checkbox" id="specialChar" name="specialChar">
+                <label>Special Characters</label><br><br>
+
+            </form>
+
+
             <div class="card-body">
+
                 <textarea readonly id="password" placeholder="Your Secure Password"
                     aria-label="Generated Password"></textarea>
             </div>
